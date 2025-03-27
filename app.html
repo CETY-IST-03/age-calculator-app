@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <style>
+        :root {
+            --white: hsl(0, 0%, 100%);
+            --off-white: hsl(0, 0%, 94%);
+            --light-grey: hsl(0, 0%, 86%);
+            --smokey-grey: hsl(0, 1%, 44%);
+            --off-black: hsl(0, 0%, 8%);
+          }
+          body{
+            background-color: hsl(0, 0%, 94%);
+        
+          }
+          .sectionMain{
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: fit-content;
+            padding: 25px;
+            align-items: center;
+            justify-content: center;
+            
+          }
+          .inputData{
+            display: flex;
+            justify-content: space-between;
+          }
+          input{
+            width: 60px;
+            border-radius: 5px;
+            height: 25px;
+          }
+
+    </style>
+</head>
+<body>
+    <div class="sectionMain">
+
+        <div>
+            <form action="" class="inputData">
+                <div>
+                    <label for="">Day </label>
+                    <input type="number" id="dayInput">
+                </div>
+                <div>
+                    <label for="Month">Month </label>
+                    <input type="number" id="monthInput">
+
+                </div>
+                <div>
+                    <label for="">Year </label>
+                    <input type="number" id="yearInput">
+                </div>
+            </form>
+        </div><br>
+
+        <button id="results">Results </button>
+
+
+        <div>
+            <p><span id="yearResult">--</span>Year</p>
+            <p><span id="monthResult">--</span>Month</p>
+            <p><span id="dayResult">--</span>Day </p>
+
+        </div>
+
+    </div>
+    
+    <!-- Project credits -->
+    <footer>
+      <div class="attribution">
+        Challenge prepared by  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your  Name(s) Here</a>.
+      </div>
+    </footer>
+    
+</body>
+</html>
