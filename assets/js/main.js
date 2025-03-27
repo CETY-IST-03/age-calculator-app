@@ -11,6 +11,21 @@ function analizeDateInputs(){
     const currentYear = currentDate.getFullYear();
     console.log(currentDay, currentMonth, currentYear);
 
+
+    if (yearInput <= currentYear - 100 || yearInput > currentYear ){
+        console.log('Invalid year input')
+        return;
+    }
+    if (monthInput <= 0 || monthInput > 12){
+        console.log('Invalid month input')
+        return;
+    }
+    const daysInMonthInput = new Date(yearInput, monthInput, 0).getDate();
+    if (dayInput <= 0 || dayInput > daysInMonthInput ){
+        console.log('Invalid day input')
+        return;
+    }
+
     let monthsGap = 0
     let daysGap = currentDay - dayInput;
 
