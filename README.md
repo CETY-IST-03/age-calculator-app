@@ -20,7 +20,7 @@
 
 - It must be `camelCase`.
 
-## Technologiesgit p
+## Technologies
 
 - html
 - css
