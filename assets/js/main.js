@@ -25,14 +25,11 @@ function analyzeDateInputs(){
     const userDay = parseInt(document.getElementById('dayInput').value);
     const userMonth = parseInt(document.getElementById('monthInput').value);
     const userYear = parseInt(document.getElementById('yearInput').value);
-
-    console.log(`User Input: ${userYear}/${userMonth}/${userDay}`);
     
     const today = new Date();
     const currentDay = today.getDate();
     const currentMonth = today.getMonth();
     const currentYear = today.getFullYear();
-    console.log(`Current Date: ${currentYear}/${currentMonth + 1}/${currentDay}`);
     
     let hasValidationError = false;
 
@@ -92,7 +89,10 @@ function analyzeDateInputs(){
     
     ageInYears += (currentYear - 1) - userYear
     
-    console.log(`Years: ${ageInYears}. Months: ${ageInMonths}. Days:${ageInDays}`);
+
+    document.getElementById('yearResult').innerText = ageInYears;
+    document.getElementById('monthResult').innerText = ageInMonths;
+    document.getElementById('dayResult').innerText = ageInDays;
 }
 
 document.getElementById('results').addEventListener('click', function(){
