@@ -6,6 +6,9 @@ function resetErrors(){
     document.getElementById("dayContainer").classList.remove("error");
     document.getElementById("monthContainer").classList.remove("error");
     document.getElementById("yearContainer").classList.remove("error");
+    document.getElementById('yearResult').innerText = "--";
+    document.getElementById('monthResult').innerText = "--";
+    document.getElementById('dayResult').innerText = "--";
 }
 function setYearError(message){
     document.getElementById("yearContainer").classList.add("error");
