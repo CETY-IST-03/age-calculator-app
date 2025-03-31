@@ -1,9 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Age Calculator</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png"/>
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+
+<body class="appContainer">
+  <div class="sectionMain">
+    <div>
+      <form action="" class="inputData">
+        <div id="dayContainer" class="container">
+          <label for="dayInput" class="dateLabel">D A Y </label>
+          <input type="number" id="dayInput" class="dateInput" min="1" max="31"/>
+          <em id="dayError"></em>
+        </div>
+        <div id="monthContainer" class="container">
+          <label for="monthInput" class="dateLabel">M O N T H </label>
+          <input type="number" id="monthInput" class="dateInput" min="1" max="12"/>
+          <em id="monthError"></em>
+        </div>
+        <div id="yearContainer" class="container">
+          <label for="yearInput" class="dateLabel">Y E A R </label>
+          <input type="number" id="yearInput" class="dateInput" min="1900"/>
+          <em id="yearError"></em>
+        </div>
+      </form>
+    </div>
+    <br/>
+
+    <div class="buttonContainer">
+      <div class="divider"></div>
+      <button id="results" class="buttonResults">
+        <img src="./assets/img/icon-arrow.svg" alt="button"/>
+      </button>
+    </div>
+
+    <div class="ageResults">
+      <p><span id="yearResult" class="numberResult">--</span>Years</p>
+      <p><span id="monthResult" class="numberResult">--</span>Months</p>
+      <p><span id="dayResult" class="numberResult">--</span>Days</p>
+    </div>
+  </div>
+
+  
+  <footer>
+    <div class="attribution">
+      Challenge prepared by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Jivesh Anand</a>. Coded by <a href="#">Group 1</a>.
+    </div>
+  </footer>
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
