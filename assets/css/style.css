@@ -19,14 +19,19 @@
     margin: 0;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 
 .sectionMain {
     background-color: var(--white);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: fit-content;
     padding: 30px;
     border-radius: 15px 15px 120px 15px;
+    box-sizing: border-box; 
+    min-width: 320px;
+    max-width: 500px; 
+    width: 90%; 
+    overflow-x: auto; 
 }
 
 .inputData {
@@ -35,13 +40,13 @@
 }
 
 .dateInput {
-    width: 80px;
     padding: 10px;
     border: 1px solid var(--light-grey);
     border-radius: 5px;
     font-size: 18px;
-    
     font-weight: bold;
+    min-width: 60px;
+    max-width: 90px; 
 }
 .container {
     display: flex;
@@ -53,7 +58,6 @@
     color: var(--smokey-grey);
     font-size: 12px;
     font-weight: bold;
-    letter-spacing: 2px;
     margin-bottom: 5px;
 }
 
@@ -66,10 +70,10 @@
 }
 
 .divider {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 2px;
     background-color: var(--light-grey);
-    top: 50%;
 }
 
 .buttonResults {
@@ -122,18 +126,18 @@
 }
 
 @media (max-width: 375px) {
-    body {
+    
+    .appContainer {
         flex-direction: column;
         align-items: center;
         height: auto;
-        padding: 40px;
+        padding: 40px; 
     }
 
     .sectionMain {
-        width: 100%;
-        max-width: 330px;
-        padding: 20px;
-        border-radius: 15px 15px 60px 15px;
+        width: 100%; 
+        max-width: 330px; 
+        padding: 25px; 
     }
 
     .inputData {
@@ -181,5 +185,11 @@
 
     .numberResult {
         font-size: 50px;
+    }
+    
+}
+@media (min-width: 768px) {
+    .sectionMain {
+        padding: 50px; 
     }
 }
