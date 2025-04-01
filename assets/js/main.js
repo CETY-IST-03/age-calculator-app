@@ -42,7 +42,7 @@ function analyzeDateInputs(){
     }else if (userYear <= currentYear - 122 ){
         setYearError("Must be a valid year");
         hasValidationError = true;
-    }else if (userYear >= currentYear){
+    }else if (userYear > currentYear){
         setYearError("Must be in the past")
         hasValidationError = true;
     }
@@ -53,7 +53,7 @@ function analyzeDateInputs(){
     } else if (userMonth <= 0 || userMonth > 12){
         setMonthError("Must be a valid month")
         hasValidationError = true;
-    } else if (userYear == currentYear && userMonth > currentMonth) {
+    } else if (userYear == currentYear && userMonth > (currentMonth + 1)) {
         setMonthError("Must be in the past")
         hasValidationError = true;
     }
