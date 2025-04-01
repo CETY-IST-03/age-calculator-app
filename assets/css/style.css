@@ -29,28 +29,31 @@
     border-radius: 15px 15px 120px 15px;
     box-sizing: border-box; 
     min-width: 320px;
-    max-width: 500px; 
+    max-width: 700px; 
     width: 90%; 
     overflow-x: auto; 
 }
 
 .inputData {
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .dateInput {
     padding: 10px;
     border: 1px solid var(--light-grey);
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: bold;
     min-width: 60px;
-    max-width: 90px; 
+    max-width: 110px; 
+    width: 100%;
+    
 }
 .container {
     display: flex;
     flex-direction: column;
+    
     
 }
 
@@ -71,7 +74,7 @@
 
 .divider {
     width: 100%;
-    max-width: 450px;
+    max-width: 550px;
     height: 2px;
     background-color: var(--light-grey);
 }
@@ -85,11 +88,11 @@
 }
 
 .buttonResults img {
-    width: 25px;
+    width: 40px;
 }
 
 .buttonResults:hover {
-    background: #5a3ec8;
+    background: black;
 }
 
 .ageResults {
@@ -101,6 +104,8 @@
     margin: 5px 0;
     font-weight: 800;
     font-size: 70px;
+    font-style: italic;
+    font-family: var(--font-family);
 }
 
 .numberResult {
@@ -119,6 +124,8 @@
 
 .error em {
     color: red;
+    font-size: 10px;
+    margin-top: 5px;
 }
 .dateInput:hover {
     border-color: var(--purple);
