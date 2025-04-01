@@ -101,6 +101,8 @@
     margin: 5px 0;
     font-weight: 800;
     font-size: 70px;
+    font-style: italic;
+    font-family: var(--font-family);
 }
 
 .numberResult {
@@ -119,6 +121,8 @@
 
 .error em {
     color: red;
+    font-size: 10px;
+    margin-top: 5px;
 }
 .dateInput:hover {
     border-color: var(--purple);
