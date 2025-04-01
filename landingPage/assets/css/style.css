@@ -166,12 +166,12 @@ section {
     text-decoration: none;
     background-color: white;
     color: var(--violet);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .button:hover {
     background-color: var(--soft-magenta);
     color: white;
-    box-shadow: 0px 4px 8px rbga(0, 0, 0, 0.2);
 }
 
 .align-icon {
