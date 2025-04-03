@@ -4,7 +4,7 @@
 }
 
 @media (max-width: 768px) {
-    .base {
+    body {
         background-image: url(../img/bg-mobile.svg);
         background-size: 100%;
     }
@@ -54,11 +54,9 @@
 }
 
 @media (min-width: 768px) {
-    .base {
-        background-color: var(--violet);
+    body {
         background-image: url(../img/bg-desktop.svg);
         background-size: cover;
-        background-repeat: no-repeat;
         background-position: center;
     }
 
@@ -113,12 +111,12 @@
     }
 }
 
-.style {
+html {
     min-height: 100vh;
     min-width: 320px;
 }
 
-.base {
+body {
     background-color: var(--violet);
     background-repeat: no-repeat;
     background-position: top left;
