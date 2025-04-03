@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Age Calculator</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png"/>
+  <link rel="stylesheet" href="./assets/css/app.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gugi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gugi&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="appContainer">
+  <div class="sectionMain">
+    <div>
+      <form action="" class="inputData">
+        <div id="dayContainer" class="container">
+          <label for="dayInput" class="dateLabel">D A Y </label>
+          <input type="number" id="dayInput" class="dateInput" min="1" max="31"/>
+          <em id="dayError"></em>
+        </div>
+        <div id="monthContainer" class="container">
+          <label for="monthInput" class="dateLabel">M O N T H </label>
+          <input type="number" id="monthInput" class="dateInput" min="1" max="12"/>
+          <em id="monthError"></em>
+        </div>
+        <div id="yearContainer" class="container">
+          <label for="yearInput" class="dateLabel">Y E A R </label>
+          <input type="number" id="yearInput" class="dateInput" min="1900"/>
+          <em id="yearError"></em>
+        </div>
+      </form>
+    </div>
+    <br/>
+
+    <div class="buttonContainer">
+      <div class="divider"></div>
+      <button id="results" class="buttonResults">
+        <img src="./assets/img/icon-arrow.svg" alt="button"/>
+      </button>
+    </div>
+
+    <div class="ageResults">
+      <p><span id="yearResult" class="numberResult">--</span>years</p>
+      <p><span id="monthResult" class="numberResult">--</span>months</p>
+      <p><span id="dayResult" class="numberResult">--</span>days</p>
+    </div>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

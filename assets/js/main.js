@@ -33,13 +33,14 @@ function analyzeDateInputs(){
     const currentDay = today.getDate();
     const currentMonth = today.getMonth();
     const currentYear = today.getFullYear();
+    const maximunAge = 122;
     
     let hasValidationError = false;
 
     if (isNaN(userYear)) {
         setYearError("This field is required");
         hasValidationError = true;
-    }else if (userYear <= currentYear - 122 ){
+    }else if (userYear <= currentYear - maximunAge ){
         setYearError("Must be a valid year");
         hasValidationError = true;
     }else if (userYear > currentYear){
@@ -65,7 +66,7 @@ function analyzeDateInputs(){
     } else if (userDay <= 0 || userDay > daysInuserMonth ){
         setDayError("Must be a valid date");
         hasValidationError = true;
-    } else if (userYear == currentYear && userMonth == currentMonth && userDay > currentDay){
+    } else if (userYear == currentYear && userMonth == (currentMonth + 1) && userDay > currentDay){
         setDayError("Must be in the past");
         hasValidationError = true;
     }

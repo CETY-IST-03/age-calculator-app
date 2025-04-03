@@ -4,7 +4,7 @@
 }
 
 @media (max-width: 768px) {
-    .base {
+    body {
         background-image: url(../img/bg-mobile.svg);
         background-size: 100%;
     }
@@ -37,7 +37,7 @@
         font-size: 18px;
     }
 
-    .button {
+    #register {
         width: 220px;
         height: 48px;
         border-radius: 24px;
@@ -54,11 +54,9 @@
 }
 
 @media (min-width: 768px) {
-    .base {
-        background-color: var(--violet);
+    body {
         background-image: url(../img/bg-desktop.svg);
         background-size: cover;
-        background-repeat: no-repeat;
         background-position: center;
     }
 
@@ -96,7 +94,7 @@
         font-size: 1.3vw;
     }
 
-    .button {
+    #register {
         width: 15vw;
         height: 4vw;
         border-radius: 2vw;
@@ -113,12 +111,12 @@
     }
 }
 
-.style {
+html {
     min-height: 100vh;
     min-width: 320px;
 }
 
-.base {
+body {
     background-color: var(--violet);
     background-repeat: no-repeat;
     background-position: top left;
@@ -154,14 +152,14 @@
     line-height: 1.6;
 }
 
-.button {
+#register {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px;
     margin-top: 10%;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -173,7 +171,7 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-.button:hover {
+#register:hover {
     background-color: var(--soft-magenta);
     color: white;
 }
@@ -195,7 +193,7 @@
     line-height: 0;
 }
 
-.icon-circle a:visited {
+.icon-circle:visited {
     color: white;
 }
 

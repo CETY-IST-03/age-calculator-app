@@ -1,0 +1,202 @@
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+    --font-family: 'Poppins', sans-serif;
+}
+
+.appContainer {
+    background-color: var(--off-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--font-family);
+    margin: 0;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.sectionMain {
+    background-color: var(--white);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px 15px 120px 15px;
+    box-sizing: border-box; 
+    min-width: 320px;
+    max-width: 700px; 
+    width: 90%; 
+    overflow-x: auto; 
+}
+
+.inputData {
+    display: flex;
+    gap: 25px;
+}
+
+.dateInput {
+    padding: 10px;
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    min-width: 60px;
+    max-width: 110px; 
+    width: 100%;
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.dateLabel {
+    color: var(--smokey-grey);
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.divider {
+    width: 100%;
+    max-width: 550px;
+    height: 2px;
+    background-color: var(--light-grey);
+}
+
+.buttonResults {
+    background-color: var(--purple);
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buttonResults img {
+    width: 40px;
+}
+
+.buttonResults:hover {
+    background: black;
+}
+
+.ageResults {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.ageResults p {
+    margin: 5px 0;
+    font-weight: 800;
+    font-size: 70px;
+    font-style: italic;
+    font-family: var(--font-family);
+}
+
+.numberResult {
+    font-size: 70px;
+    font-weight: 800;
+    color: var(--purple);
+    margin-right: 10px;
+}
+.error .dateInput {
+    border-color: red;
+}
+
+.error .dateLabel {
+    color: red;
+}
+
+.error em {
+    color: red;
+    font-size: 10px;
+    margin-top: 5px;
+}
+.dateInput:hover {
+    border-color: var(--purple);
+    cursor: pointer;  
+}
+
+@media (max-width: 375px) {
+    
+    .appContainer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 40px; 
+    }
+
+    .sectionMain {
+        width: 100%; 
+        max-width: 330px; 
+        padding: 25px; 
+    }
+
+    .inputData {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .dateInput {
+        width: 70px;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .dateLabel {
+        font-size: 10px;
+    }
+
+    .divider {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .buttonContainer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .buttonResults {
+        padding: 12px;
+        position: absolute;
+        bottom: -25px;
+    }
+
+    .ageResults {
+        font-size: 30px;
+        
+    }
+
+    .ageResults p {
+        font-size: 50px;
+    }
+
+    .numberResult {
+        font-size: 50px;
+    }
+    
+}
+@media (min-width: 768px) {
+    .sectionMain {
+        padding: 50px; 
+    }
+}
